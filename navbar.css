@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+}
+
+.nav {
+    height: 10vh;
+    width: 97%;
+    padding-bottom:3px;
+}
+
+#hamburger-list{
+    display: none;
+}
+
+.logo-as-home{
+    display: none;
+}
+
+.LOGO {
+    height: 100%;
+    width: 4%;
+    padding-left: 11px;
+}
+
+.Home {
+    height: 100%;
+    width: 4%;
+}
+
+.home {
+    background-color: var(--background--color);
+    border: none;
+    height: 82%;
+    width: 92%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home:hover {
+    background-color: var(--hover--color);
+}
+
+.Search {
+    height: 100%;
+    width: 48%;
+    padding-left: 8px;
+
+}
+
+.Search-Container {
+    height: 82%;
+    width: 70%;
+    background-color: var(--background--color);
+    border-radius: 25px;
+    padding-left: 12px;
+}
+
+.Search-Container:hover {
+    background-color: var(--hover--color);
+}
+
+.Search-Input {
+    height: 94%;
+    width: 85%;
+    margin-left: 7px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+.Search-Input::placeholder {
+    color: var(--text--color);
+    font-weight: 550;
+}
+
+.Search-Input:focus {
+    outline: none;
+}
+
+.browse {
+    color: var(--text--color);
+    font-size: 1rem;
+}
+
+.Search-Browse-Button {
+    padding: 0px 12px 0px 12px;
+}
+
+.Prem-Supp-Down {
+    width: 20%;
+    height: 100%;
+    color: var(--text--color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Prem-Supp-Down span a {
+    text-decoration: none;
+    color: var(--text--color);
+}
+
+.Install {
+    height: 100%;
+    width: 10%;
+}
+
+.blank {
+    background-color: white;
+    height: 60%;
+    width: 1%;
+}
+
+.Install-Button {
+    margin-left: 25px;
+    width: 75%;
+    background-color: transparent;
+    color: var(--text--color);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.Sign-In {
+    color: var(--text--color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.Sign-In span a{
+    text-decoration: none;
+    color: var(--text--color);
+}
+
+.hovering:hover{
+    color: white;
+}
+
+.Log-In{
+    height: 100%;
+    width: 8%;
+    margin: auto;
+}
+
+.Log-In-Button{
+    height: 80%;
+    width: 97%;
+    border-radius: 25px;
+}
+
+.Log-In-Button span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Log-In-Button:hover{
+    background-color: rgb(230, 229, 229);
+}
+
+
+/* #1f1f1f */

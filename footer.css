@@ -1,0 +1,97 @@
+.footer {
+    background: linear-gradient(to right, #e381d3, #3f8ae6);
+    height: 11.5vh;
+    width: 99%;
+    margin: auto;
+    margin-top: 5px;
+    position: relative;
+}
+
+.footer-song-name {
+    position: absolute;
+    left: 80px;
+    top: 13px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.control-buttons {
+    position: absolute;
+    top: 10px;
+    gap: 12px;
+}
+
+.control-buttons button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.control-buttons button:hover {
+    background-color: rgba(234, 234, 234, 0.273);
+}
+
+.duration {
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.duration p {
+    color: rgb(39, 38, 38);
+    font-size: 0.95rem;
+    font-weight: 550;
+}
+
+.duration p:first-child {
+    position: absolute;
+    bottom: 38%;
+    left: 6.9%;
+}
+
+.duration p:last-child {
+    position: absolute;
+    bottom: 39%;
+    right: 6.1%;
+}
+
+.bar {
+    width: 80%;
+    height: 18%;
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    bottom: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.point {
+    height: 14px;
+    width: 14px;
+    border: 1px solid white;
+    border-radius: 999px;
+    background-color: black;
+    position: relative;
+    top: -5px;
+    left: 0%;
+    transition: left 0.5s ease;
+}
+
+.volume-bar{
+    gap: 3px;
+    margin-left: 10px;
+}
+
+
+.volume-bar input{
+    width: 55px;
+}
+.no-volume{
+    display: none;
+}

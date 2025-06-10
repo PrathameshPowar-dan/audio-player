@@ -1,0 +1,39 @@
+:root {
+  --background--color: #1f1f1f;
+  --hover--color: #42414199;
+  --text--color: #b3b3b3;
+  --artist--color: #aaaaaa;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.justifyCEN{
+    justify-content: center;
+}
+
+.alignCEN{
+    align-items: center;
+}
+
+.gap{
+    gap: 10px;
+}
+
+.justifyEND{
+    justify-content: flex-end;
+}
+
+.justifySTART{
+    justify-content: flex-start;
+}
+
+.alignEND{
+    align-items: end;
+}
+
+.justifySB{
+    justify-content: space-between;
+}

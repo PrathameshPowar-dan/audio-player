@@ -1,0 +1,602 @@
+@media only screen and (max-width: 768px) {
+
+    .nav {
+        width: 100%;
+        padding-bottom: 3px;
+    }
+
+    #logo-spotify {
+        display: none;
+    }
+
+    #hamburger-list {
+        display: block;
+    }
+
+    .LOGO {
+        height: 60%;
+        width: 10%;
+    }
+
+    .LOGO img {
+        width: 25px;
+    }
+
+    .Home {
+        height: 98%;
+        width: 12%;
+        padding-left: 5px;
+    }
+
+    .Home button a img:first-child {
+        display: none;
+    }
+
+    .logo-as-home {
+        display: inline-block;
+    }
+
+    .Search {
+        height: 100%;
+        width: 25%;
+        padding-left: 4px;
+
+    }
+
+    .Search-Container {
+        height: 82%;
+        width: 100%;
+    }
+
+    .Search-Input {
+        margin-left: 3px;
+        font-size: 0.6rem;
+        font-weight: 500;
+        color: white;
+        box-shadow: none;
+        border: none;
+    }
+
+    .browse {
+        display: none;
+    }
+
+    .Prem-Supp-Down {
+        display: none;
+    }
+
+    .Install {
+        height: 80%;
+        width: 20%;
+    }
+
+    .Install-Button img {
+        width: 15px;
+    }
+
+    .blank {
+        margin-left: 25px;
+        color: white;
+    }
+
+    .Install-Button span {
+        color: var(--text--color);
+    }
+
+    .Install-Button {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 700;
+        gap: 7px;
+    }
+
+    .Sign-In {
+        color: var(--text--color);
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding-left: 20px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .Log-In {
+        height: 90%;
+        width: 14%;
+    }
+
+    .Log-In-Button {
+        width: 100%;
+    }
+
+    .Log-In-Button span {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+
+    .MAIN {
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .Trending-link {
+        font-size: 1.2rem;
+    }
+
+    .ShowAll-Trending-link {
+        font-size: 0.75rem;
+    }
+
+    .Main-content-cards {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .card-song-name p {
+        margin: 5px 0px 2px 0px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .card-song-artist ul li p {
+        color: var(--artist--color);
+        font-size: 0.72rem;
+    }
+
+    .left-btn,
+    .right-btn {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+    }
+
+    .card button {
+        display: none;
+    }
+
+    .Library {
+        position: absolute;
+        left: -100%;
+        width: 40vw;
+        padding: 0px 2px;
+        transition: all 0.5s ease;
+        background-color: rgb(33, 33, 33);
+    }
+
+    .cross-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .add-icon {
+        display: none;
+    }
+
+    .Spotify-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding-top: 35px;
+        box-sizing: border-box;
+    }
+
+    .company,
+    .communities,
+    .useful-links,
+    .spotify-plans {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .ul-list {
+        padding-left: 10px;
+    }
+
+    .Spotify-Links-Header {
+        font-size: 1rem;
+    }
+
+    .ul-list {
+        font-size: 0.75rem;
+        padding-left: 2px;
+    }
+
+    .ul-list li {
+        margin: 5px 0;
+    }
+
+    .social-media-buttons {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .ending p {
+        font-size: 0.85rem;
+        margin-top: 20px;
+    }
+
+    .footer-song-name {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        left: 0px;
+        top: 4px;
+    }
+
+
+    .bar {
+        width: 70%;
+    }
+
+    .point {
+        height: 10px;
+        width: 10px;
+        top: -2.8px;
+        left: -1%;
+    }
+
+    .duration p:first-child {
+        position: absolute;
+        bottom: 45%;
+        left: 6%;
+    }
+
+    .duration p:last-child {
+        position: absolute;
+        bottom: 45%;
+        right: 4.5%;
+    }
+
+    .Library {
+        width: 65vw;
+    }
+
+    .Library-header {
+        padding: 15px 0px 10px 0px;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .company-links {
+        margin-top: 0px;
+    }
+
+    .volume-bar input {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .Install {
+        height: 100%;
+        width: 21%;
+    }
+
+    .Install-Button {
+        font-size: 0.65rem;
+        gap: 3px;
+    }
+
+    .Sign-In {
+        font-size: 0.8rem;
+        padding-left: 12px;
+    }
+
+    .Log-In {
+        padding-right: 12px;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:475px) {
+    .LOGO img {
+        width: 16px;
+    }
+
+    .Search-Button img {
+        width: 16px;
+    }
+
+    .Search {
+        width: 15%;
+    }
+
+    .Home {
+        margin-left: 2px;
+        width: 11%;
+    }
+
+    .home {
+        height: 60%;
+    }
+
+    .logo-as-home {
+        width: 16px;
+    }
+
+    .Search {
+        width: 11%;
+    }
+
+    .Search-Input {
+        display: none;
+    }
+
+    .Search-Button {
+        padding-left: 1px;
+    }
+
+    .Search-Container {
+        width: 70%;
+        padding-left: 9px;
+    }
+
+    .Install {
+        height: 100%;
+        width: 28%;
+    }
+
+    .Install-Button {
+        font-size: 0.6rem;
+        gap: 3px;
+    }
+
+    .Sign-In {
+        padding-left: 16px;
+        padding-right: 6px;
+    }
+
+    .Log-In {
+        padding-right: 0px;
+    }
+
+    .company-links span {
+        font-size: 0.35rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .Home {
+        height: 80%;
+    }
+
+    .Search {
+        width: 16%;
+        height: 80%;
+    }
+
+    .Search-Container {
+        padding-left: 5px;
+    }
+
+    .blank {
+        display: none;
+    }
+
+    .Install {
+        display: none;
+    }
+
+    .Sign-In {
+        font-size: 0.7rem;
+        padding-left: 25px;
+        padding-right: 6px;
+    }
+
+    .Log-In {
+        width: 25%;
+    }
+
+    .Log-In-Button {
+        width: 100%;
+    }
+
+    .your-playlist {
+        gap: 5px;
+        padding: 8px 8px;
+    }
+
+    .your-playlist img {
+        width: 16px;
+    }
+
+    .playlist-song-name p {
+        font-size: 0.6rem;
+    }
+
+    .playlist-song-artist p {
+        font-size: 0.4rem;
+    }
+
+    .playing-song button span {
+        display: none;
+    }
+
+
+
+    .Library-header span p {
+        font-size: 0.8rem;
+    }
+
+    .Trending-link {
+        font-size: 0.75rem;
+    }
+
+    .ShowAll-Trending-link {
+        font-size: 0.5rem;
+    }
+
+    .card-song-name p {
+        font-size: 0.6rem;
+    }
+
+    .card-song-artist ul li p {
+        font-size: 0.5rem;
+    }
+
+    .Main-content-cards {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .Spotify-Links-Header {
+        font-size: 0.9rem;
+    }
+
+    .ul-list {
+        font-size: 0.69rem;
+        padding-left: 2px;
+    }
+
+    .footer-song-name {
+        left: 6px;
+        top: 3px;
+    }
+
+    .duration p:first-child {
+        position: absolute;
+        bottom: 20%;
+        left: 6%;
+    }
+
+    .duration p:last-child {
+        position: absolute;
+        bottom: 20%;
+        right: 4.5%;
+    }
+}
+
+@media (min-height: 700px) {
+
+    .nav {
+        height: 6vh;
+    }
+
+    .Search-Container {
+        background-color: black;
+    }
+
+    .Sign-In {
+        font-size: 0.7rem;
+    }
+
+    .Log-In-Button span {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .footer {
+        height: 15.5vh;
+    }
+
+    .control-buttons {
+        justify-content: center;
+        top: 46px;
+        margin-left: 20px;
+    }
+
+    #previous,
+    #play,
+    #next {
+        width: 26px;
+    }
+
+    .nav {
+        height: 7vh;
+    }
+
+    .bar {
+        bottom: 35px;
+    }
+
+    .point {
+        height: 14.5px;
+        width: 14px;
+        top: -2.5px;
+    }
+
+    .footer-song-name {
+        font-size: 1.8rem;
+    }
+
+    .duration p:first-child {
+        bottom: 68%;
+        left: 4.1%;
+    }
+
+    .duration p {
+        font-size: 1rem;
+    }
+
+    .duration p:last-child {
+        bottom: 68%;
+        right: 4.5%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Home {
+        margin-left: 10px;
+    }
+
+    .Sign-In {
+        padding-right: 19px;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+
+    .Spotify-Links-Header {
+        font-size: 0.92rem;
+    }
+
+    .ul-list {
+        font-size: 0.8rem;
+    }
+
+    .company {
+        width: 19%;
+        margin-right: 15px;
+    }
+
+    .communitie {
+        width: 19%;
+        margin-right: 15px;
+    }
+
+    .useful-links {
+        width: 19%;
+        margin-right: 15px;
+    }
+
+    .spotify-plans {
+        width: 19%;
+        margin-right: 15px;
+    }
+
+    .social-media-buttons {
+        gap: 12px;
+    }
+
+    .volume-bar input {
+        width: 85px;
+    }
+
+    .bottomPAD{
+        padding-bottom: 22px;
+    }
+}

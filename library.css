@@ -1,0 +1,125 @@
+.Library {
+    position: relative;
+    z-index: 15;
+    height: 77vh;
+    width: 30vw;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+
+.Library-header {
+    margin: auto;
+    padding: 15px 0px 20px 0px;
+    width: 90%;
+    justify-content: space-between;
+    color: white;
+}
+
+.cross-icon {
+    display: none;
+}
+
+.Library-header span p {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.playlist {
+    height: 58vh;
+    width: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+}
+
+.playlist:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.467) transparent;
+}
+
+.your-playlist {
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    gap: 25px;
+    padding: 15px 13px;
+    border-radius: 12px;
+    background-color: var(--background--color);
+}
+
+.song-details {
+    width: 60%;
+}
+
+.playlist-song-name-true {
+    display: none;
+}
+
+.playlist-song-name p {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.playlist-song-artist p {
+    font-size: 0.75em;
+    color: var(--artist--color);
+}
+
+.playing-song button span {
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.playing-song {
+    width: 28%;
+}
+
+.playing-song button {
+    padding: 5px 5px;
+    border-radius: 99px;
+    gap: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.playing-song button img {
+    filter: invert(1);
+}
+
+.playing-song button:hover {
+    background-color: #5d5c5c;
+}
+
+.links {
+    width: 94%;
+    padding: 10px;
+    margin: auto;
+}
+
+.company-links {
+    margin-top: 8px;
+    padding-left: 10px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.7fr 1.5fr 1fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
+    column-gap: 10px;
+}
+
+.company-links span {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company-links span a {
+    text-decoration: none;
+    color: var(--text--color);
+}

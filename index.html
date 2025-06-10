@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio Web Player</title>
+    <link rel="icon" href="Images/audio-icon.ico" type="Image/x-icon">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header class="nav flex alignCEN">
+        <nav class="LOGO flex alignCEN">
+            <img id="hamburger-list" src="Images/list.svg" alt="logo">
+            <img id="logo-spotify" src="Images/logo.svg" alt="logo">
+        </nav>
+        <div class="Home flex justifyCEN alignCEN">
+            <button class="home flex alignCEN justifyCEN"><a href="">
+                    <img src="Images/home.svg" alt="home" width="23px">
+                    <img src="Images/logo.svg" class="logo-as-home" alt="home" width="23px">
+                </a></button>
+        </div>
+        <div class="Search flex alignCEN">
+            <div class="Search-Container flex alignCEN">
+                <div class="Search-Button flex alignCEN justifyCEN"><button class="home flex alignCEN justifyCEN"><img
+                            src="Images/search.svg" alt="Search LOGO" width="25px"></button>
+                </div>
+                <div class="Search-Input flex alignCEN">
+                    <input class="Search-Input" type="text" placeholder="Search a Song">
+                </div>
+                <div class="browse flex alignCEN justifyEND">|
+                    <div class="Search-Browse-Button"><button class="home flex alignCEN justifyCEN"><img
+                                src="Images/browse.svg" alt="Browse Button" width="25px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Prem-Supp-Down flex gap justifyCEN alignCEN">
+            <span><a class="hovering" href="">Premium</a></span>
+            <span><a class="hovering" href="">Support</a></span>
+            <span><a class="hovering" href="">Download</a></span>
+        </div>
+        <div class="Install flex alignCEN">
+            <span class="blank"></span>
+            <button class="Install-Button hovering flex gap alignCEN">
+                <img src="Images/download.svg" alt="Install" width="18px"><span class="flex alignCEN">Install
+                    App</span></button>
+        </div>
+        <div class="Sign-In">
+            <span><a class="hovering" href="">Sign-In</a></span>
+        </div>
+        <div class="Log-In flex alignCEN justifyEND">
+            <button class="Log-In-Button"><span>Log In</span></button>
+        </div>
+    </header>
+
+    <div class="middle-content flex">
+        <div class="Library">
+            <div class="Library-Container">
+                <div class="Library-header flex">
+                    <span>
+                        <p>Your Library</p>
+                    </span>
+                    <span>
+                        <img src="Images/add.svg" class="add-icon" alt="add" width="15px">
+                        <img src="Images/cross.svg" class="cross-icon" alt="close">
+                    </span>
+                </div>
+                <div class="playlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="links">
+                    <div class="company-links">
+                        <span><a href="">Legal</a></span>
+                        <span><a href="">Safety & Privacy center</a></span>
+                        <span><a href="">Privacy Policy</a></span>
+                        <span><a href="">Cookies</a></span>
+                        <span><a href="">About Ads</a></span>
+                        <span><a href="">Accessibility</a></span>
+                    </div>
+                    <!-- <div class="lang-button">
+                        <button class="flex alignCEN justifyCEN">
+                            <img src="Images/globe.svg" alt="lang" width="18px">
+                            <span>English</span>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <main class="MAIN flex justifyEND alignEND">
+            <div class="Main-Content">
+                <div class="Main-Content-head flex alignEND justifySB">
+                    <p class="Trending-link"><a href="">Trending songs</p></a>
+                    <p class="ShowAll-Trending-link"><a href="">Show all</p></a>
+                </div>
+                <section class="scroll-wrapper">
+                    <button class="scroll-btn left-btn flex alignCEN justifyCEN
+                    ">◀</button>
+                    <div class="Main-content-cards" id="trending-cards">
+                    </div>
+                    <button class="scroll-btn right-btn flex alignCEN justifyCEN">▶</button>
+                </section>
+                <div class="Main-Content-head flex alignEND justifySB">
+                    <p class="Trending-link"><a href="">Popular artist</p></a>
+                    <p class="ShowAll-Trending-link"><a href="">Show all</p></a>
+                </div>
+                <section class="scroll-wrapper">
+                    <button class="scroll-btn left-btn flex alignCEN justifyCEN
+                    ">◀</button>
+                    <div class="Main-content-cards">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">A.R.Rahman</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Pritam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f"
+                                    class="artist-img" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Honey Singh</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Artist</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right-btn flex alignCEN justifyCEN">▶</button>
+                </section>
+                <div class="Main-Content-head flex alignEND justifySB">
+                    <p class="Trending-link"><a href="">Popular albums and singles</p></a>
+                    <p class="ShowAll-Trending-link"><a href="">Show all</p></a>
+                </div>
+                <section class="scroll-wrapper">
+                    <button class="scroll-btn left-btn flex alignCEN justifyCEN
+                    ">◀</button>
+                    <div class="Main-content-cards bottomPAD">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Aashiqui 2</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Mithoon</a></p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Sanam Teri Kasam</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Himesh Reshammiya</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="card">
+                                <button><img src="Images/play.svg" alt="play"></button>
+                                <div class="card-song-name">
+                                    <p><a href="">Yeh Jawaani Hai Deewani</a></p>
+                                    <div class="card-song-artist">
+                                        <ul>
+                                            <li>
+                                                <p><a href="">Pritam</a></p>
+                                            </li>
+                                            <li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-btn right-btn flex alignCEN justifyCEN">▶</button>
+                    </div>
+                </section>
+                <div class="line-break"></div>
+                <div class="Spotify-links flex">
+                    <div class="company">
+                        <p class="Spotify-Links-Header">Company</p>
+                        <ul class="ul-list">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the Record</a></li>
+                        </ul>
+                    </div>
+                    <div class="communities">
+                        <p class="Spotify-Links-Header">Communities</p>
+                        <ul class="ul-list">
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+                    <div class="useful-links">
+                        <p class="Spotify-Links-Header">Useful links</p>
+                        <ul class="ul-list">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free Mobile App</a></li>
+                            <li><a href="">Popular by Country</a></li>
+                        </ul>
+                    </div>
+                    <div class="spotify-plans">
+                        <p class="Spotify-Links-Header">Spotify Plans</p>
+                        <ul class="ul-list">
+                            <li><a href="">Premium Individual</a></li>
+                            <li><a href="">Premium Family</a></li>
+                            <li><a href="">Premium Student</a></li>
+                            <li><a href="">Premium Duo</a></li>
+                            <li><a href="">Spotify Free</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media-buttons">
+                        <button><a href="#"><img src="Images/insta.svg" alt="Insta" width="18px"></a></button>
+                        <button><a href="#"><img src="Images/x.svg" alt="X" width="18px"></a></button>
+                        <button><a href="#"><img src="Images/facebook.svg" alt="Facebook" width="18px"></a></button>
+                    </div>
+                </div>
+                <div class="line-break"></div>
+                <div class="ending">
+                    <p>© 2025 Spotify AB</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+    <footer class="footer flex alignCEN justifyCEN">
+        <div class="footer-song-name"></div>
+        <div class="control-buttons flex">
+            <button><img id="previous" src="Images/previous.svg" alt="previous" width="25px"></button>
+            <button><img id="play" src="Images/play2.svg" alt="play/pause" width="25px"></button>
+            <button><img id="next" src="Images/next.svg" alt="next" width="25px"></button>
+            <button class="volume-bar flex">
+                <img class="volume" src="Images/volume.svg" alt="next" width="25px">
+                <img class="no-volume" src="Images/NoVOL.svg" alt="next" width="25px">
+                <input type="range" value="volume">
+            </button>
+        </div>
+        <div class="duration flex justifyCEN">
+            <p id="song-time-running"></p>
+            <div class="bar">
+                <div class="point"></div>
+            </div>
+            <p id="song-time-total"></p>
+        </div>
+    </footer>
+    <script>
+        const scrollWrappers = document.querySelectorAll('.scroll-wrapper');
+
+        const scrollStep = 350;
+
+        scrollWrappers.forEach(wrapper => {
+            const scrollContainer = wrapper.querySelector('.Main-content-cards');
+            const leftBtn = wrapper.querySelector('.left-btn');
+            const rightBtn = wrapper.querySelector('.right-btn');
+
+            leftBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+            });
+
+            rightBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({ left: scrollStep, behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

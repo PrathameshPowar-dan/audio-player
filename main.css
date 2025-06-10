@@ -1,0 +1,318 @@
+.MAIN {
+    max-height: 77vh;
+    width: 68.3vw;
+    min-width: 0;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-left: 7px;
+}
+
+.Main-Content {
+    width: 96%;
+    height: 93%;
+    position: relative;
+}
+
+.Main-Content-head {
+    width: 95%;
+    margin-left: 5px;
+}
+
+.Trending-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Trending-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.Trending-link a:hover {
+    text-decoration: underline;
+}
+
+.ShowAll-Trending-link {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.ShowAll-Trending-link a {
+    color: var(--text--color);
+    text-decoration: none;
+}
+
+.ShowAll-Trending-link a:hover {
+    text-decoration: underline;
+}
+
+.scroll-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Main-content-cards {
+    height: 60%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.Main-content-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.scroll-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.left-btn {
+    left: 5px;
+}
+
+.right-btn {
+    right: 5px;
+}
+
+
+.card-container {
+    height: 100%;
+    max-width: 21%;
+}
+
+.card-container:hover {
+    background-color: #1e1e1e;
+}
+
+.card {
+    width: 88%;
+    height: 100%;
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-song-name p a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-song-name p a:hover {
+    text-decoration: underline;
+}
+
+.card-song-name p {
+    margin: 5px 0px 2px 0px;
+    font-weight: 600;
+}
+
+.card-song-artist ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.card-song-artist ul li p {
+    color: var(--artist--color);
+    font-size: 0.8em;
+}
+
+.card-song-artist ul li p a {
+    color: var(--artist--color);
+    text-decoration: none;
+}
+
+.card-song-artist ul li p a:hover {
+    text-decoration: underline;
+}
+
+.card-container {
+    flex: 0 0 160px;
+    height: auto;
+}
+
+.left-btn,
+.right-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.Main-Content {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+}
+
+.MAIN:hover .Main-Content {
+    scrollbar-color: rgba(255, 255, 255, 0.467) transparent;
+}
+
+.scroll-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.scroll-wrapper:hover .scroll-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card .artist-img {
+    width: 100%;
+    border-radius: 9999px;
+}
+
+.line-break {
+    padding: 0;
+    height: 0.11%;
+    width: 100%;
+    background-color: var(--text--color);
+    position: absolute;
+    left: -20px;
+}
+
+.Spotify-links {
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+.Spotify-Links-Header {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.ul-list {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.ul-list li {
+    margin: 8px 0px;
+}
+
+.ul-list li a {
+    color: var(--text--color);
+    text-decoration: none;
+}
+
+.ul-list li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.company {
+    margin-right: 50px;
+}
+
+.communities {
+    margin-right: 50px;
+}
+
+.useful-links {
+    margin-right: 38px;
+}
+
+.spotify-plans {
+    margin-right: 50px;
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-buttons button {
+    height: 35px;
+    width: 35px;
+    background-color: var(--background--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 999px;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.social-media-buttons button:hover {
+    background-color: var(--artist--color);
+}
+
+.ending p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text--color);
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.card{
+    position: relative;
+}
+
+.card button{
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: #35cb6a;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 6px;
+    bottom: 82px;
+    opacity: 0;
+}
+
+.card button img{
+    width: 22px;
+}
+
+.card-song-artist{
+    padding-bottom: 10px;
+}
+
+
+.card-container:hover .card button{
+    opacity: 1;
+}
+
+.card button:hover{
+    background-color: #3be477;
+}
