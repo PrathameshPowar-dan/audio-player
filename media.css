@@ -503,7 +503,7 @@
 
     .control-buttons {
         justify-content: center;
-        top: 46px;
+        top: 39px;
         margin-left: 20px;
     }
 
@@ -537,7 +537,7 @@
     }
 
     .duration p {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .duration p:last-child {
