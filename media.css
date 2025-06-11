@@ -503,14 +503,14 @@
 
     .control-buttons {
         justify-content: center;
-        top: 39px;
+        top: 35px;
         margin-left: 20px;
     }
 
     #previous,
     #play,
     #next {
-        width: 26px;
+        width: 24px;
     }
 
     .nav {
@@ -537,7 +537,7 @@
     }
 
     .duration p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .duration p:last-child {
