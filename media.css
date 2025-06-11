@@ -497,8 +497,12 @@
         font-weight: 600;
     }
 
+    .Library{
+        height: 65vh;
+    }
+
     .footer {
-        height: 10.5vh;
+        height: 15.5vh;
     }
 
     .control-buttons {
