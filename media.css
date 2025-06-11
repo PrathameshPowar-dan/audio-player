@@ -159,6 +159,7 @@
 
     .Library {
         position: absolute;
+        z-index: 1;
         left: -100%;
         width: 40vw;
         padding: 0px 2px;
