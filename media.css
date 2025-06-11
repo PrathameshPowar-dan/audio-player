@@ -159,7 +159,6 @@
 
     .Library {
         position: absolute;
-        z-index: 1;
         left: -100%;
         width: 40vw;
         padding: 0px 2px;
@@ -504,14 +503,14 @@
 
     .control-buttons {
         justify-content: center;
-        top: 35px;
+        top: 38px;
         margin-left: 20px;
     }
 
     #previous,
     #play,
     #next {
-        width: 24px;
+        width: 26px;
     }
 
     .nav {
@@ -538,7 +537,7 @@
     }
 
     .duration p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .duration p:last-child {
