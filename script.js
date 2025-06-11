@@ -200,6 +200,14 @@ next.addEventListener("click", () => {
             document.querySelector(".no-volume").style.display = "block";
         }
     })
+
+    document.querySelector(".volume-bar").getElementsByTagName("input")[0].addEventListener("change", e => {
+        currentSong.volume = parseInt(e.target.value) / 100
+        if (currentSong.volume == .10) {
+            document.querySelector(".volume").style.display = "block";
+            document.querySelector(".no-volume").style.display = "none";
+        }
+    })
 }
 Songs()
 
