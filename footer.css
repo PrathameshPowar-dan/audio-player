@@ -4,7 +4,8 @@
     width: 99%;
     margin: auto;
     margin-top: 5px;
-    position: relative;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-song-name {
