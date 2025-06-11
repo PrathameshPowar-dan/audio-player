@@ -423,8 +423,8 @@
         display: none;
     }
 
-    .Library{
-        height: 60vh;
+    .Library {
+        height: 69vh;
     }
 
     .Library-header span p {
@@ -462,10 +462,11 @@
         padding-left: 2px;
     }
 
+
     .footer {
         height: 15.5vh;
     }
-    
+
     .footer-song-name {
         left: 6px;
         top: 3px;
@@ -475,6 +476,10 @@
         position: absolute;
         bottom: 20%;
         left: 6%;
+    }
+
+    .duration p{
+        font-size: 0.8rem;
     }
 
     .duration p:last-child {
@@ -502,7 +507,6 @@
         font-size: 0.6rem;
         font-weight: 600;
     }
-
 
     .footer {
         height: 15.5vh;
@@ -603,7 +607,7 @@
         width: 85px;
     }
 
-    .bottomPAD{
+    .bottomPAD {
         padding-bottom: 22px;
     }
 }
