@@ -423,7 +423,9 @@
         display: none;
     }
 
-
+    .Library{
+        height: 60vh;
+    }
 
     .Library-header span p {
         font-size: 0.8rem;
@@ -460,6 +462,10 @@
         padding-left: 2px;
     }
 
+    .footer {
+        height: 15.5vh;
+    }
+    
     .footer-song-name {
         left: 6px;
         top: 3px;
@@ -497,9 +503,6 @@
         font-weight: 600;
     }
 
-    .Library{
-        height: 65vh;
-    }
 
     .footer {
         height: 15.5vh;
@@ -514,7 +517,7 @@
     #previous,
     #play,
     #next {
-        width: 26px;
+        width: 24px;
     }
 
     .nav {
