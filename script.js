@@ -175,20 +175,22 @@ async function Songs() {
     })
 
     previous.addEventListener("click", () => {
-        currentSong.pause()
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1])
-        }
-    })
+    currentSong.pause();
+    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+    let index = songs.findIndex(s => s.trim() === currentFile.trim());
+    if (index > 0) {
+        playMusic(songs[index - 1]);
+    }
+});
 
-    next.addEventListener("click", () => {
-        currentSong.pause()
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-        if ((index + 1) < songs.length) {
-            playMusic(songs[index + 1])
-        }
-    })
+next.addEventListener("click", () => {
+    currentSong.pause();
+    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+    let index = songs.findIndex(s => s.trim() === currentFile.trim());
+    if (index < songs.length - 1) {
+        playMusic(songs[index + 1]);
+    }
+});
 
 
     document.querySelector(".volume-bar").getElementsByTagName("input")[0].addEventListener("change", e => {
