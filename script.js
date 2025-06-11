@@ -16,24 +16,40 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
+const songs = [
+  "Bad Beat - Dyalla.mp3",
+  "Broken Circuits - Telecasted.mp3",
+  "Carousel Dreams - The Soundlings.mp3",
+  "Champion - Telecasted.mp3",
+  "Funk It - Dyalla.mp3",
+  "Gemini - The Soundlings.mp3",
+  "Give It To Me Straight - Jeremy Black.mp3",
+  "Glitcher - Dyalla.mp3",
+  "Going Home - The Soundlings.mp3",
+  "GTA Type Beat - Dyalla.mp3",
+  "I Need You - Dyalla.mp3",
+  "Jetski - Telecasted.mp3",
+  "Jingle Bells - The Soundlings.mp3",
+  "Kung Fu Love Tree - Quincas Moreira.mp3",
+  "Motherland - Ryan Stasik, Kanika Moore.mp3",
+  "No Combat - Telecasted.mp3",
+  "Oh Please - Telecasted.mp3",
+  "Portcullis - The Mini Vandals.mp3",
+  "Ricky Tar - Casa Rosa's Tulum Vibes.mp3",
+  "Silent Night - The Soundlings.mp3",
+  "Taverna Mystica - Chris Haugen.mp3",
+  "Tipo Um Samba - Quincas Moreira.mp3",
+  "Touch Anno - Domini Beats.mp3",
+  "Trilogy - Telecasted.mp3",
+  "Youll Find A Way - Telecasted.mp3"
+];
+
 async function GetSongs() {
-    let a = await fetch("http://127.0.0.1:3000/Projects/Spotify%20Clone/Songs/")
-    let response = await a.text();
-    let div = document.createElement("div")
-    div.innerHTML = response;
-    let As = div.getElementsByTagName("a")
-    let songs = []
-    for (let i = 0; i < As.length; i++) {
-        const element = As[i];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/Songs/")[1])
-        }
-    }
-    return songs
+    return songs;
 }
 
 const playMusic = (track, pause = false) => {
-    currentSong.src = "./Songs/" + track
+    currentSong.src = "https://prathameshpowar-dan.github.io/audio-player/Songs/" + track
     if (!pause) {
 
         currentSong.play()
@@ -43,7 +59,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function Songs() {
-    let songs = await GetSongs();
+    await GetSongs();
     playMusic(songs[0], true)
 
     let songUL = document.querySelector(".playlist ul");
