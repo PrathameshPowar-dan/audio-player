@@ -17,31 +17,31 @@ function secondsToMinutesSeconds(seconds) {
 }
 
 const songs = [
-  "Bad Beat - Dyalla.mp3",
-  "Broken Circuits - Telecasted.mp3",
-  "Carousel Dreams - The Soundlings.mp3",
-  "Champion - Telecasted.mp3",
-  "Funk It - Dyalla.mp3",
-  "Gemini - The Soundlings.mp3",
-  "Give It To Me Straight - Jeremy Black.mp3",
-  "Glitcher - Dyalla.mp3",
-  "Going Home - The Soundlings.mp3",
-  "GTA Type Beat - Dyalla.mp3",
-  "I Need You - Dyalla.mp3",
-  "Jetski - Telecasted.mp3",
-  "Jingle Bells - The Soundlings.mp3",
-  "Kung Fu Love Tree - Quincas Moreira.mp3",
-  "Motherland - Ryan Stasik, Kanika Moore.mp3",
-  "No Combat - Telecasted.mp3",
-  "Oh Please - Telecasted.mp3",
-  "Portcullis - The Mini Vandals.mp3",
-  "Ricky Tar - Casa Rosa's Tulum Vibes.mp3",
-  "Silent Night - The Soundlings.mp3",
-  "Taverna Mystica - Chris Haugen.mp3",
-  "Tipo Um Samba - Quincas Moreira.mp3",
-  "Touch Anno - Domini Beats.mp3",
-  "Trilogy - Telecasted.mp3",
-  "Youll Find A Way - Telecasted.mp3"
+    "Bad Beat - Dyalla.mp3",
+    "Broken Circuits - Telecasted.mp3",
+    "Carousel Dreams - The Soundlings.mp3",
+    "Champion - Telecasted.mp3",
+    "Funk It - Dyalla.mp3",
+    "Gemini - The Soundlings.mp3",
+    "Give It To Me Straight - Jeremy Black.mp3",
+    "Glitcher - Dyalla.mp3",
+    "Going Home - The Soundlings.mp3",
+    "GTA Type Beat - Dyalla.mp3",
+    "I Need You - Dyalla.mp3",
+    "Jetski - Telecasted.mp3",
+    "Jingle Bells - The Soundlings.mp3",
+    "Kung Fu Love Tree - Quincas Moreira.mp3",
+    "Motherland - Ryan Stasik, Kanika Moore.mp3",
+    "No Combat - Telecasted.mp3",
+    "Oh Please - Telecasted.mp3",
+    "Portcullis - The Mini Vandals.mp3",
+    "Ricky Tar - Casa Rosa's Tulum Vibes.mp3",
+    "Silent Night - The Soundlings.mp3",
+    "Taverna Mystica - Chris Haugen.mp3",
+    "Tipo Um Samba - Quincas Moreira.mp3",
+    "Touch Anno - Domini Beats.mp3",
+    "Trilogy - Telecasted.mp3",
+    "Youll Find A Way - Telecasted.mp3"
 ];
 
 async function GetSongs() {
@@ -175,37 +175,55 @@ async function Songs() {
     })
 
     previous.addEventListener("click", () => {
-    currentSong.pause();
-    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
-    let index = songs.findIndex(s => s.trim() === currentFile.trim());
-    if (index > 0) {
-        playMusic(songs[index - 1]);
-    }
-});
+        currentSong.pause();
+        let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+        let index = songs.findIndex(s => s.trim() === currentFile.trim());
+        if (index > 0) {
+            playMusic(songs[index - 1]);
+        }
+    });
 
-next.addEventListener("click", () => {
-    currentSong.pause();
-    let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
-    let index = songs.findIndex(s => s.trim() === currentFile.trim());
-    if (index < songs.length - 1) {
-        playMusic(songs[index + 1]);
-    }
-});
+    next.addEventListener("click", () => {
+        currentSong.pause();
+        let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+        let index = songs.findIndex(s => s.trim() === currentFile.trim());
+        if (index < songs.length - 1) {
+            playMusic(songs[index + 1]);
+        }
+    });
 
 
     document.querySelector(".volume-bar").getElementsByTagName("input")[0].addEventListener("change", e => {
-    currentSong.volume = parseInt(e.target.value) / 100;
-    if (currentSong.volume > 0) {
-        document.querySelector(".volume").style.display = "block";
-        document.querySelector(".no-volume").style.display = "none";
-    } else {
-        document.querySelector(".volume").style.display = "none";
-        document.querySelector(".no-volume").style.display = "block";
-    }
-});
+        currentSong.volume = parseInt(e.target.value) / 100;
+        if (currentSong.volume > 0) {
+            document.querySelector(".volume").style.display = "block";
+            document.querySelector(".no-volume").style.display = "none";
+        } else {
+            document.querySelector(".volume").style.display = "none";
+            document.querySelector(".no-volume").style.display = "block";
+        }
+    });
 
 }
 Songs()
+
+const scrollWrappers = document.querySelectorAll('.scroll-wrapper');
+
+const scrollStep = 350;
+
+scrollWrappers.forEach(wrapper => {
+    const scrollContainer = wrapper.querySelector('.Main-content-cards');
+    const leftBtn = wrapper.querySelector('.left-btn');
+    const rightBtn = wrapper.querySelector('.right-btn');
+
+    leftBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: scrollStep, behavior: 'smooth' });
+    });
+});
 
 
 
