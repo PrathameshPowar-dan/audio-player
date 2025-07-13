@@ -16,37 +16,12 @@ function secondsToMinutesSeconds(seconds) {
     return `${formattedMinutes}:${formattedSeconds}`;
 }
 
-const songs = [
-    "Bad Beat - Dyalla.mp3",
-    "Broken Circuits - Telecasted.mp3",
-    "Carousel Dreams - The Soundlings.mp3",
-    "Champion - Telecasted.mp3",
-    "Funk It - Dyalla.mp3",
-    "Gemini - The Soundlings.mp3",
-    "Give It To Me Straight - Jeremy Black.mp3",
-    "Glitcher - Dyalla.mp3",
-    "Going Home - The Soundlings.mp3",
-    "GTA Type Beat - Dyalla.mp3",
-    "I Need You - Dyalla.mp3",
-    "Jetski - Telecasted.mp3",
-    "Jingle Bells - The Soundlings.mp3",
-    "Kung Fu Love Tree - Quincas Moreira.mp3",
-    "Motherland - Ryan Stasik, Kanika Moore.mp3",
-    "No Combat - Telecasted.mp3",
-    "Oh Please - Telecasted.mp3",
-    "Portcullis - The Mini Vandals.mp3",
-    "Ricky Tar - Casa Rosa's Tulum Vibes.mp3",
-    "Silent Night - The Soundlings.mp3",
-    "Taverna Mystica - Chris Haugen.mp3",
-    "Tipo Um Samba - Quincas Moreira.mp3",
-    "Touch Anno - Domini Beats.mp3",
-    "Trilogy - Telecasted.mp3",
-    "Youll Find A Way - Telecasted.mp3"
-];
-
 async function GetSongs() {
-    return songs;
+  let response = await fetch("https://prathameshpowar-dan.github.io/audio-player/Songs/songs.json");
+  let songs = await response.json();
+  return songs;
 }
+
 
 const playMusic = (track, pause = false) => {
     currentSong.src = "https://prathameshpowar-dan.github.io/audio-player/Songs/" + track
@@ -58,8 +33,10 @@ const playMusic = (track, pause = false) => {
     document.querySelector(".footer-song-name").innerHTML = decodeURI(track.replace(".mp3", " ").split("-")[0]);
 }
 
+let songs = [];
+
 async function Songs() {
-    await GetSongs();
+    songs = await GetSongs();
     playMusic(songs[0], true)
 
     let songUL = document.querySelector(".playlist ul");
